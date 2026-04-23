@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header-banner">
+            INSTANT ACCESS | 14-DAY MONEY-BACK
+        </div>
+
+        <section class="hero">
+            <h1 class="hero-title">
+                <span class="text-green">WIN YOUR MORNING</span>
+                <span class="text-black">WIN YOUR DAY</span>
+            </h1>
+            <div class="hero-image-container">
+                <img src="./images/fon.webp" alt="Man folding arms" class="hero-img">
+            </div>
+        </section>
+
+        <section class="pricing-timer">
+            <div class="price-block">
+                <div class="current-price">15€</div>
+                <div class="old-price">was 75€</div>
+            </div>
+            <div class="timer-block">
+                <div class="timer-label">PRICE EXPIRES IN</div>
+                <div class="timer-display">
+                    <div class="timer-box">23</div>
+                    <span class="timer-divider">:</span>
+                    <div class="timer-box">59</div>
+                    <span class="timer-divider">:</span>
+                    <div class="timer-box">52</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <p><strong>Tired before 10am ?</strong></p>
+            <p><strong>Reset your natural energy in 7 days</strong></p>
+        </section>
+
+        <div class="cta-container">
+            <button class="main-button">FIX YOUR PERFORMANCE</button>
+        </div>
+        <section class="video-block">
+            <p class="main-label">WATCH BEFORE YOU SCROLL</p>
+            <h2 class="main-title">
+                I WILL EXPLAIN WHY YOUR ENERGY IS BROKEN - 
+                <span class="text-green">AND EXACTLY HOW MY <br>PROTOCOL FIXES IT</span>
+            </h2>
+
+            <div class="video-container" id="videoContainer">
+                <img src="./images/poster.webp" alt="Video Preview" class="video-poster" id="videoPoster">
+                
+                <button class="play-button" id="playBtn">
+                    <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="34" cy="34" r="34" fill="#8cc63f"/>
+                        <path d="M45 34L28.5 43.5263L28.5 24.4737L45 34Z" fill="black"/>
+                    </svg>
+                </button>
+
+                <video id="mainVideo" controls>
+                    <source src="your-video-url.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="video-description">
+                <p class="video-meta">· 8–12 min · No fluff ·</p>
+                <p class="video-text">
+                    Learn how to push with stable energy and <br> 
+                    not depend on any “boosters”
+                </p>
+            </div>
+        </section>
+        <section class="loop-section">
+            <div class="loop-header">
+                <h3 class="main-label">SOUND FAMILIAR?</h3>
+                <h2 class="main-title">THE LOOP YOU'RE STUCK IN</h2>
+            </div>
+
+            <div class="swiper first-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card-number">01</div>
+                        <div class="loop-card">
+                            <div class="card-content">
+                                <h4 class="card-title">Morning drain? <br> Brain goes offline <br> before 11 am?</h4>
+                                <p class="card-text">
+                                    No matter how well you slept, your focus crashes in the early afternoon. 
+                                    You reach for another coffee. It doesn't fully work.
+                                </p>
+                            </div>
+                            <img src="./images/loop.webp" alt="Man tired" class="card-person">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-number">01</div>
+                        <div class="loop-card">
+                            <div class="card-content">
+                                <h4 class="card-title">Morning drain? <br> Brain goes offline <br> before 11 am?</h4>
+                                <p class="card-text">
+                                    No matter how well you slept, your focus crashes in the early afternoon. 
+                                    You reach for another coffee. It doesn't fully work.
+                                </p>
+                            </div>
+                            <img src="./images/loop.webp" alt="Man tired" class="card-person">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-number">01</div>
+                        <div class="loop-card">
+                            <div class="card-content">
+                                <h4 class="card-title">Morning drain? <br> Brain goes offline <br> before 11 am?</h4>
+                                <p class="card-text">
+                                    No matter how well you slept, your focus crashes in the early afternoon. 
+                                    You reach for another coffee. It doesn't fully work.
+                                </p>
+                            </div>
+                            <img src="./images/loop.webp" alt="Man tired" class="card-person">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <div class="first-slider-pagination"></div>
+                <div class="nav-buttons">
+                    <button class="first-slider-prev">
+                        <svg width="40" height="20" viewBox="0 0 53 11" fill="none"><path d="M0.5 5.5H52M0.5 5.5L6.5 0.5M0.5 5.5L6.5 10.5" stroke="black"/></svg>
+                    </button>
+                    <button class="first-slider-next">
+                        <svg width="40" height="20" viewBox="0 0 53 11" fill="none"><path d="M52.5 5.5H1M52.5 5.5L46.5 0.5M52.5 5.5L46.5 10.5" stroke="white"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="was">
+            <div class="loop-header">
+                <h3 class="main-label">Your guide</h3>
+                <h2 class="main-title">I was you
+                    <br>
+                    <span class="text-green">
+                        Two years ago
+                    </span>
+                </h2>
+                <p class="main-text">
+                    I spent years obsessing over the actual science of energy - for my clients and myself. Not the biohacker supplements, not the ice baths, not the 5am club. 
+                    <br>
+                    <strong>
+                        The real mechanisms. Mitochondrial function. Cortisol timing. Adenosine clearance.
+                    </strong>
+                </p>
+            </div>
+            <img src="./images/info.webp" alt="">
+            <div class="loop-header" style="padding-top: 40px;">
+                <h2 class="main-title">THE 
+                    <span class="text-green">
+                        SCIENCE
+                    </span>
+                </h2>
+                <p class="main-text">
+                    Your body gives you a free energy spike every morning. <strong>You're probably killing it</strong>
+                    <br>
+                    <br>
+                    It's called the <strong>Cortisol Awakening Response.</strong> 
+                    In the first 30 minutes after waking, <strong>cortisol rises <br>
+                    50–100% </strong> above baseline — sharpening focus, priming muscles, fuelling your first <strong>4–6 hours.</strong>
+                </p>
+            </div>
+            <img src="./images/science.webp" alt="">
+        </section>
+        <section class="quote-section">
+            <div class="quote-card">
+                <p class="quote-text">
+                    <strong>The Cortisol Awakening Response</strong> is the strongest hormonal event of the circadian cycle — and has a disproportionate influence on energy, cognition, and mood for the entire day
+                </p>
+                <p class="quote-author">
+                    Dr. Stalder et al. — <br>
+                    Endocrine Reviews, 2024
+                </p>
+            </div>
+        </section>
+        <section class="system">
+            <h3 class="main-label">The system</h3>
+                <h2 class="main-title">
+                    14 Days. 4 Phases. 
+                    <br>
+                    <span class="text-green">
+                        One<br>transformation
+                    </span>
+                </h2>
+                <p class="main-text">
+                    Most programs give you habits to add. 
+This protocol targets the underlying biology — the actual mechanisms that produce energy at the cellular level. Each phase builds on the last. You can't skip ahead. 
+                </p>
+        </section>
+        <section class="phase-slider-section">
+    <div class="swiper phase-swiper">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <div class="phase-badge">
+                            <span class="phase-label">PHASE 01</span>
+                            <span class="phase-days">DAYS 1-3</span>
+                        </div>
+                        <div class="phase-title-block">
+                            <h2 class="phase-title">THE RESET</h2>
+                            <p class="phase-subtitle">Adenosine detox,<br>Cortisol calibration</p>
+                        </div>
+                    </div>
+
+                    <div class="phase-content">
+                        <p>Adenosine is the molecule of fatigue — it accumulates while you're awake and gets cleared during sleep.</p>
+                        
+                        <p class="mt-20">You're tired because your system can't wake you up anymore.<br>Every morning:</p>
+                        
+                        <ul class="phase-list">
+                            <li>you open your eyes... but don't feel awake, you need coffee just to feel normal</li>
+                            <li>your brain feels slow, heavy, delayed</li>
+                        </ul>
+                        
+                        <p class="emoji-line"><span class="emoji">👉</span> That's not "just how you are"</p>
+                        
+                        <p class="mt-25">What this phase does:</p>
+                        <ul class="phase-list">
+                            <li>resets your sensitivity to energy signals</li>
+                            <li>restores your natural morning activation</li>
+                            <li>removes the need for "forced stimulation"</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-tabs">
+                        <div class="tab active">
+                            <span class="tab-num">1</span>
+                            <span class="tab-text">Reset</span>
+                        </div>
+                        <div class="tab">
+                            <span class="tab-num">2</span>
+                            <span class="tab-text">Signal</span>
+                        </div>
+                        <div class="tab">
+                            <span class="tab-num">3</span>
+                            <span class="tab-text">Rhythm</span>
+                        </div>
+                    </div>
+
+                    <div class="phase-resources">
+                        <div class="resource-item">
+                            <img src="./images/14-ico-2.webp" alt="Protocol" class="resource-img">
+                            <div class="resource-text">
+                                <h4 class="resource-title">THE 30-MINUTE PROTOCOL</h4>
+                                <p class="resource-desc">Full sequence PDF with exact timing, actions, and Edward's implementation notes. Not a framework — an execution manual.</p>
+                            </div>
+                        </div>
+                        <div class="resource-item resource-item-second">
+                            <img src="./images/14-ico-1.webp" alt="Calculator" class="resource-img calc-img">
+                            <div class="resource-text">
+                                <h4 class="resource-title">COFFEE TIMING GUIDE +<br>CHRONOTYPE CALCULATOR</h4>
+                                <p class="resource-desc">Log your energy level, focus, and coffee intake each morning. See your pattern by Day 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <div class="phase-badge">
+                            <span class="phase-label">PHASE 02</span>
+                            <span class="phase-days">DAYS 4-7</span>
+                        </div>
+                        <div class="phase-title-block">
+                            <h2 class="phase-title">The Activation</h2>
+                            <p class="phase-subtitle">Mitochondrial biogenesis, <br>Glucose stabilization</p>
+                        </div>
+                    </div>
+
+                    <div class="phase-content">
+                        <p>Mitochondria are where your Their efficiency determines how much energy you extract from the same food and sleep. <br><br>Phase 2 triggers mitochondrial biogenesis: the process of building new, more efficient mitochondria - where energy is literally manufactured - converting food and oxygen into ATP, the fuel your cells run on, without supplements. <br><br>What this phase does: stabilizes your energy production removes energy crashes gives you predictable output across the day</p>
+                    </div>
+
+                    <div class="phase-tabs">
+                        <div class="tab active">
+                            <span class="tab-num">4</span>
+                            <span class="tab-text">Fuel</span>
+                        </div>
+                        <div class="tab">
+                            <span class="tab-num">5</span>
+                            <span class="tab-text">Build</span>
+                        </div>
+                        <div class="tab">
+                            <span class="tab-num">6</span>
+                            <span class="tab-text">Peak</span>
+                        </div>
+                        <div class="tab tab-g">
+                            <span class="tab-num">7</span>
+                            <span class="tab-text">First win</span>
+                        </div>
+                    </div>
+
+                    <div class="phase-resources">
+                        <div class="resource-item">
+                            <img src="./images/14-ico-3.webp" alt="Protocol" class="resource-img">
+                            <div class="resource-text">
+                                <h4 class="resource-title">CAR Activation Workout</h4>
+                                <p class="resource-desc">HD videos of all Best exercises with Edward coaching each rep. No equipment. Works anywhere.</p>
+                            </div>
+                        </div>
+                        <div class="resource-item resource-item-second">
+                            <img src="./images/14-ico-5.webp" alt="Calculator" class="resource-img calc-img">
+                            <div class="resource-text">
+                                <h4 class="resource-title">Morning Fuel Protocol</h4>
+                                <p class="resource-desc">3 athlete-tested breakfast options, ready in 5 minutes, designed to prevent the 3pm crash at 7am</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <div class="phase-badge">
+                            <span class="phase-label">PHASE 03</span>
+                            <span class="phase-days">DAYS 8-11</span>
+                        </div>
+                        <div class="phase-title-block">
+                            <h2 class="phase-title">THE RESET</h2>
+                            <p class="phase-subtitle">Neuroplasticity, Circadian <br>synchronization</p>
+                        </div>
+                    </div>
+
+                    <div class="phase-content">
+                        <p>You’ve felt better before. You just couldn’t keep it. You start something → it works → then disappears
+                            <br><br>
+Why? 👉 Because your body always pulls you back to default Not discipline problem - wiring problem
+                            <br><br>
+                            What this phase does: 
+locks new patterns into your nervous system aligns sleep, energy, focus into one rhythm removes the need to “try hard” 
+                            <br><br>
+You stop managing energy  You start operating on it
+</p>
+                    </div>
+
+                    <div class="phase-tabs">
+                        <div class="tab active">
+                            <span class="tab-num">8</span>
+                            <span class="tab-text">Sync</span>
+                        </div>
+                        <div class="tab">
+                            <span class="tab-num">9</span>
+                            <span class="tab-text">Deepen</span>
+                        </div>
+                        <div class="tab">
+                            <span class="tab-num">10</span>
+                            <span class="tab-text">Wire</span>
+                        </div>
+                        <div class="tab tab-g">
+                            <span class="tab-num">11</span>
+                            <span class="tab-text">Reinforce</span>
+                        </div>
+                    </div>
+
+                    <div class="phase-resources">
+                        <div class="resource-item">
+                            <img src="./images/14-ico-4.webp" alt="Protocol" class="resource-img">
+                            <div class="resource-text">
+                                <h4 class="resource-title">Daily Tracker</h4>
+                                <p class="resource-desc">Log your energy level, focus, and coffee intake each morning. See your pattern by Day 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <div class="phase-badge">
+                            <span class="phase-label">PHASE 04</span>
+                            <span class="phase-days">DAYS 12-14</span>
+                        </div>
+                        <div class="phase-title-block">
+                            <h2 class="phase-title">THE RESET</h2>
+                            <p class="phase-subtitle">Neuroplasticity, Circadian <br>synchronization</p>
+                        </div>
+                    </div>
+
+                    <div class="phase-content">
+                        <p>
+                            The goal of Phase 4 is to make the system invisible. You shouldn't have to think about the protocol — your body should start demanding the right inputs because it's been biochemically rewarded for them. This is the difference between willpower and wiring.
+                        </p>
+                        <p class="gr-t">
+                            Day 14 — the comparison
+                        </p>
+                        <p>
+                            On Day 14 you compare your energy metrics from Day 1 against today. Not a subjective feeling — actual tracked numbers. This moment is why we track from the start. The gap between who you were and who you are now becomes undeniable.
+                        </p>
+                    </div>
+
+                    <div class="phase-tabs">
+                        <div class="tab active">
+                            <span class="tab-num">12</span>
+                            <span class="tab-text">Automate</span>
+                        </div>
+                        <div class="tab">
+                            <span class="tab-num">13</span>
+                            <span class="tab-text">Stress test</span>
+                        </div>
+                        <div class="tab tab-g">
+                            <span class="tab-num">14</span>
+                            <span class="tab-text">New normal</span>
+                        </div>
+                    </div>
+
+                    <div class="phase-resources">
+                        <div class="resource-item">
+                            <img src="./images/14-ico-6.webp" alt="Protocol" class="resource-img">
+                            <div class="resource-text">
+                                <h4 class="resource-title">Progress markers/checklists</h4>
+                                <p class="resource-desc">Log your energy level, focus, and coffee intake each morning. See your pattern by Day 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </div>
+
+    <div class="slider-controls">
+        <div class="phase-slider-pagination"></div>
+        <div class="nav-buttons">
+            <button class="phase-slider-prev">
+                <svg width="40" height="20" viewBox="0 0 53 11" fill="none"><path d="M0.5 5.5H52M0.5 5.5L6.5 0.5M0.5 5.5L6.5 10.5" stroke="black"/></svg>
+            </button>
+            <button class="phase-slider-next">
+                <svg width="40" height="20" viewBox="0 0 53 11" fill="none"><path d="M52.5 5.5H1M52.5 5.5L46.5 0.5M52.5 5.5L46.5 10.5" stroke="white"/></svg>
+            </button>
+        </div>
+    </div>
+    
+</section>
+<div class="total-value-container">
+    <div class="total-value-badge">
+        <div class="tv-label">TOTAL VALUE</div>
+        <div class="tv-price-row">
+            <span class="tv-old">€115</span>
+            <span class="tv-arrow">→</span>
+            <span class="tv-new">€15</span>
+        </div>
+    </div>
+</div>
+<section class="loop-section">
+            <div class="loop-header">
+                <h2 class="slider-title">Reviews</h2>
+            </div>
+
+            <div class="swiper second-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-78d745c0afcce706" aria-live="polite">
+                    <img src="./images/slider/slide1.webp" class="swiper-slide" alt="">
+                    <img src="./images/slider/slide2.webp" class="swiper-slide" alt="">
+                    <img src="./images/slider/slide3.webp" class="swiper-slide" alt="">
+                    <img src="./images/slider/slide4.webp" class="swiper-slide" alt="">
+                    <img src="./images/slider/slide5.webp" class="swiper-slide" alt="">
+                    <img src="./images/slider/slide6.webp" class="swiper-slide" alt="">
+                    <img src="./images/slider/slide7.webp" class="swiper-slide" alt="">
+                    <img src="./images/slider/slide8.webp" class="swiper-slide" alt="">
+                    <img src="./images/slider/slide9.webp" class="swiper-slide" alt="">
+                    <img src="./images/slider/slide10.webp" class="swiper-slide" alt="">
+                    <img src="./images/slider/slide11.webp" class="swiper-slide" alt="">
+                    <img src="./images/slider/slide12.webp" class="swiper-slide" alt="">
+                </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+            <div class="slider-controls">
+                <div class="second-slider-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+                <div class="nav-buttons">
+                    <button class="second-slider-prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-78d745c0afcce706">
+                        <svg width="40" height="20" viewBox="0 0 53 11" fill="none"><path d="M0.5 5.5H52M0.5 5.5L6.5 0.5M0.5 5.5L6.5 10.5" stroke="black"></path></svg>
+                    </button>
+                    <button class="second-slider-next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-78d745c0afcce706">
+                        <svg width="40" height="20" viewBox="0 0 53 11" fill="none"><path d="M52.5 5.5H1M52.5 5.5L46.5 0.5M52.5 5.5L46.5 10.5" stroke="white"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="made-for-you__section">
+    <h2 class="made-for-you__header">
+        <span class="made-for-you__header-line-1">THIS STACK WAS</span>
+        <br>
+        <span class="made-for-you__header-line-2">MADE FOR YOU</span>
+    </h2>
+
+    <div class="made-for-you__list">
+        <div class="made-for-you__item made-for-you__item--1">
+            <div class="made-for-you__content">
+                <h3 class="made-for-you__title">
+                    YOU'RE DISCIPLINED —<br>BUT RUNNING AT 60%
+                </h3>
+                <p class="made-for-you__text">
+                    You show up. You push. You execute. But you<br>know your output doesn't match your potential.
+                </p>
+            </div>
+        </div>
+
+        <div class="made-for-you__item made-for-you__item--2">
+            <div class="made-for-you__content">
+                <h3 class="made-for-you__title">
+                    YOU'RE PRODUCTIVE —<br>BUT ALWAYS DRAINED
+                </h3>
+                <p class="made-for-you__text">
+                    You get things done... but by the end of the day,<br>there's nothing left.
+                </p>
+            </div>
+        </div>
+
+        <div class="made-for-you__item made-for-you__item--3">
+            <div class="made-for-you__content">
+                <h3 class="made-for-you__title">
+                    YOU TRAIN — BUT IT<br>DOESN'T TRANSLATE
+                </h3>
+                <p class="made-for-you__text">
+                    Workouts are there. Effort is there. Energy,<br>recovery, and results are inconsistent.
+                </p>
+            </div>
+        </div>
+
+        <div class="made-for-you__item made-for-you__item--4">
+            <div class="made-for-you__content">
+                <h3 class="made-for-you__title">
+                    YOUR FOCUS COMES<br>IN WAVES
+                </h3>
+                <p class="made-for-you__text">
+                    Some days you're sharp. Most days you're just<br>pushing through.
+                </p>
+            </div>
+        </div>
+
+        <div class="made-for-you__item made-for-you__item--5">
+            <div class="made-for-you__content">
+                <h3 class="made-for-you__title">
+                    YOU FEEL LIKE SOMETHING IS OFF<br>— BUT CAN'T EXPLAIN IT
+                </h3>
+                <p class="made-for-you__text">
+                    You're not broken.<br>But you're not operating at full capacity either.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="difference-section">
+    <h2 class="difference-header">
+        <span class="text-black">GET THE</span>
+        <span class="text-green">DIFFERENCE</span>
+    </h2>
+
+    <img src="./images/hjh.webp" alt="">
+
+    <div class="guarantee-box">
+        <img src="./images/group.webp" alt="100% Money Back Guarantee" class="guarantee-badge">
+        <div class="guarantee-text-block">
+            <h3 class="guarantee-title">THE 14-DAY MORNING<br>SHIFT GUARANTEE</h3>
+            <p class="guarantee-desc">
+                Follow the protocol for 14 days.<br>
+                If your mornings don't feel different —<br>
+                full refund. No forms, no questions.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="faq-section">
+    <h2 class="q-title">
+        GOT DOUBTS?
+    </h2>
+    <div class="faq-item is-open">
+        <div class="faq-header">
+            <h3 class="faq-title">WHAT IF I'VE ALREADY<br>TRIED EVERYTHING?</h3>
+            <button class="faq-toggle">
+                <img src="./images/q-arrow.webp" alt="Arrow" class="faq-arrow">
+            </button>
+        </div>
+        <div class="faq-content-wrapper">
+            <div class="faq-content-inner">
+                <div class="faq-body">
+                    That’s exactly why this works. Most people try random fixes - supplements, routines, hacks. This is a structured system that fixes how your energy works, not just symptoms.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-header">
+            <h3 class="faq-title">DO I NEED SUPPLEMENTS OR<br>SPECIAL EQUIPMENT?</h3>
+            <button class="faq-toggle">
+                <img src="./images/q-arrow.webp" alt="Arrow" class="faq-arrow">
+            </button>
+        </div>
+        <div class="faq-content-wrapper">
+            <div class="faq-content-inner">
+                <div class="faq-body">
+                    No. No supplements. No gadgets. Just simple protocols you can apply immediately.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-header">
+            <h3 class="faq-title">WILL IT TAKE MUCH TIME?</h3>
+            <button class="faq-toggle">
+                <img src="./images/q-arrow.webp" alt="Arrow" class="faq-arrow">
+            </button>
+        </div>
+        <div class="faq-content-wrapper">
+            <div class="faq-content-inner">
+                <div class="faq-body">
+                    No long workouts. No complicated routines. Everything is designed to fit into a real schedule.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-header">
+            <h3 class="faq-title">WHAT IF I'M ALREADY<br>TRAINING / WORKING OUT?</h3>
+            <button class="faq-toggle">
+                <img src="./images/q-arrow.webp" alt="Arrow" class="faq-arrow">
+            </button>
+        </div>
+        <div class="faq-content-wrapper">
+            <div class="faq-content-inner">
+                <div class="faq-body">
+                    Good. This will make your training more effective - not replace it. You’ll recover better and stop feeling drained after sessions.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </div>
+    <section style="
+    background-color: #000;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 420px;
+    margin-bottom: 200px;">
+        <div class="wrapper">
+    <div class="contact">
+            <h2 class="mainTitle">
+                <span>Contact</span><br>Information
+            </h2>
+            <p class="mainText" style="padding-top: 30px; text-align: center;"><span>Social Media Links:</span></p>
+            <div class="contact-box">
+                <a href="https://www.instagram.com/ed.grind" class="contact-box-item">
+                    <img src="./images/inst-new.png" alt="inst">
+                    <p class="mainText">EdGrind</p>
+                </a>
+                <a href="mailto:SUPPORT_ZUBALENOK@ZBL.AGENCY" class="contact-box-item">
+                    <img src="./images/email-new.png" alt="inst">
+                    <p class="mainText">Email</p>
+                </a>
+            </div>
+            <div class="support_link">
+                <a href="mailto:SUPPORT_ZUBALENOK@ZBL.AGENCY">SUPPORT_ZUBALENOK@ZBL.AGENCY</a>
+            </div>
+            <a href="/policy" class="contactlink">Privacy Policy and User Agreement</a>
+        </div>
+        </div>
+</section>
+    </main>
+    <div class="wrapper">
+    <footer class="footer" id="footer">
+        <p class="footer-title">
+            Offer ends in:
+        </p>
+        <div class="footer-timer">
+            <div class="footer-timer-item">
+                <h3 class="footer-timer-value">23</h3>
+                <p class="footer-timer-time">hours</p>
+            </div>
+            <div class="footer-timer-item">
+                <h3 class="footer-timer-value">59</h3>
+                <p class="footer-timer-time">minutes</p>
+            </div>
+            <div class="footer-timer-item">
+                <h3 class="footer-timer-value">59</h3>
+                <p class="footer-timer-time">seconds</p>
+            </div>
+        </div>
+        <!-- <a class="footerButton payment-btn open-popup-btn">Sign up today</a> -->
+         <a class="footerButton payment-btn open-popup-btn">👉 Show Me the System</a>
+    </footer>
+    </div>
+        <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            const footer = document.getElementById('footer'); // елемент, до якого додамо клас
+            if (!footer) return;
+
+            window.addEventListener('scroll', () => {
+                // Перевіряємо, скільки проскролено
+                if (window.scrollY >= 200) {
+                    footer.classList.add('active');
+                } else {
+                    footer.classList.remove('active');
+                }
+            });
+        });
+    </script>
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+
+
+</html>
