@@ -545,6 +545,14 @@ button {
     pointer-events: none;
 }
 
+.loop-2{
+    width: 48%;
+}
+
+.loop-3{
+    width: 52%;
+}
+
 /* Controls */
 .slider-controls {
     display: flex;
@@ -1601,4 +1609,10 @@ padding-bottom: 10px;
     display: block;
     margin: 0 auto;
     color: #cacaca;
+}
+
+@media(max-width: 428px){
+    .contact .mainTitle{
+        font-size: 11vw;
+    }
 }

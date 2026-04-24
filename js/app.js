@@ -38,19 +38,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
  document.addEventListener("DOMContentLoaded", () => {
-  function startConcrete24hTimer(timerSelector, valueSelector, storageKey) {
-    const timer = document.querySelector(timerSelector);
-    if (!timer) return;
-    const values = timer.querySelectorAll(valueSelector);
+
+  function start24hTimer(containerSelector, itemSelector, storageKey) {
+    const container = document.querySelector(containerSelector);
+    if (!container) return;
+
+    const values = container.querySelectorAll(itemSelector);
+    if (values.length < 3) return;
+
     const TOTAL_TIME = 24 * 60 * 60 * 1000;
 
     let startTime = localStorage.getItem(storageKey);
 
-    // Перевіряємо реальне значення з кешу
-    const hoursFromCache = values[0].textContent || "";
-    if (!startTime || hoursFromCache.startsWith("+")) {
-      // Якщо в кеші є + або немає значення — очищаємо і стартуємо заново
-      localStorage.removeItem(storageKey);
+    // Якщо немає старту — задаємо
+    if (!startTime) {
       startTime = Date.now();
       localStorage.setItem(storageKey, startTime);
     } else {
@@ -61,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const now = Date.now();
       let elapsed = now - startTime;
 
+      // Ресет після 24 годин або якщо щось пішло не так
       if (elapsed >= TOTAL_TIME || elapsed < 0) {
         startTime = now;
         localStorage.setItem(storageKey, startTime);
@@ -68,11 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const remaining = TOTAL_TIME - elapsed;
+
       const hours = Math.floor(remaining / 3600000);
       const minutes = Math.floor((remaining % 3600000) / 60000);
       const seconds = Math.floor((remaining % 60000) / 1000);
 
-      // Примусово переписуємо значення, щоб ніякого + не було
       values[0].textContent = String(hours).padStart(2, "0");
       values[1].textContent = String(minutes).padStart(2, "0");
       values[2].textContent = String(seconds).padStart(2, "0");
@@ -82,6 +84,11 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(updateTimer, 1000);
   }
 
-  startConcrete24hTimer(".footer-timer", ".footer-timer-value", "timerStartTime");
-  startConcrete24hTimer(".what-content-time", ".what-content-time-item-title", "whatContentTimerStartTime");
+  // Старі таймери
+  start24hTimer(".footer-timer", ".footer-timer-value", "timerStartTime");
+  start24hTimer(".what-content-time", ".what-content-time-item-title", "whatContentTimerStartTime");
+
+  // Новий таймер
+  start24hTimer(".timer-display", ".timer-box", "displayTimerStartTime");
+
 });
