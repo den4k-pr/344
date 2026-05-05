@@ -27,8 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     new Swiper(phaseSliderEl, {
         loop: true,
-        spaceBetween: 15, // Відстань між картками фаз
-        slidesPerView: 1.05, // Трохи видно наступну картку (як і в попередньому блоці)
+        spaceBetween: 15,
+        slidesPerView: 1.05,
+
+        autoHeight: true, // <-- головне
+        observer: true,
+        observeParents: true,
 
         pagination: {
             el: ".phase-slider-pagination",
